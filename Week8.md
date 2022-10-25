@@ -34,6 +34,9 @@ what causes the system to switch threads?
 ## Give an example application where threads are useful? 
 code editor
 - there is one thread for the kernal, one for the disk, another to take in keyboard input
+  - keyboard gets keystrokes
+  - kernal manages internal buffer and updates screen
+  - disk autosaves
 
 ## How do we quantify the benefit of threads? 
 T(req) = T(read) + T(serve) + T(write)
